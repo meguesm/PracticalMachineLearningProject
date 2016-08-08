@@ -104,7 +104,7 @@ The result shows random forest method better than classification tree method. Th
 Finally, the prediction model based on random forests will be used to predict the outcome variable classe for the testing data set:
 
 ```{r }
-(predict(fit_randForests, testing))
+(predict(fit_randForests, testingData))
 ```
 
 
