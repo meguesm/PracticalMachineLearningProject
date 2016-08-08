@@ -15,9 +15,9 @@ This project uses data from accelerometers on the belt, forearm, arm, and dumbel
 
 ## Data Loading
 
-Loaging required packages:
+Loading required packages:
 
-```{r }
+```{r , message=FALSE}
 library(caret); library(rattle); library(rpart); library(rpart.plot)
 library(randomForest); library(repmis)
 ```
@@ -77,7 +77,7 @@ predict_classTree <- predict(fit_classTree, validation)
 (accuracy_classTree <- conf_classTree$overall[1])
 ```
 
-Review the confusion matrix, we get an accuracy rate = 0.5, and so the out-of-sample error rate is 0.5. Then, this prediction model based on classification tree does not predict the outcome classe very well.
+Review the confusion matrix, we get an accuracy rate = 0.496, and so the out-of-sample error rate is 0.5. Then, this prediction model based on classification tree does not predict the outcome classe very well.
 
 ### Random forests
 
